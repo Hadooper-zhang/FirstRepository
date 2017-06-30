@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{
+        		margin: 0px;
+        		padding: 0px;
+        	}
+
+        	.header{
+        		width: 1200px;
+        		height: 100px;
+        		text-align: center;
+        		line-height: 100px;
+        	}
+        	.outer{
+        		width: 1200px;
+        		height: 300px;
+				margin: auto;
+				border: 1px solid red;
+        	}
+        	.inner{
+        		float: right;
+        		width: 400px;
+        		height: 300px;
+        		background-color: grey;
+        	}
+        	table{
+        		margin-top: 100px;
+        		margin-left: 20px;
+        	}
+        </style>
+        <script>
+            function register(){
+               document.form.action="register.jsp";
+               document.form.submit;
+            }
+            function change(){
+            	var img = document.getElementsByTagName("img")[0];
+            	img.src = "/studentsystem/servlet/securityCode?time="+new Date().getTime();
+            }
+        </script>
+    </head>
+    <body>
+    	<div class="header"><h1>教务管理系统</h1></div>
+    	<div class="outer">
+    		<div class="inner">
+    			<form action="servlet/dolog" method="post" name="form">
+    				<table>
+    					<tr>
+    						<td>用户名：</td>
+    						<td><input type="text" name="name"></td>
+    					</tr>
+    					<tr>
+    						<td>密码：</td>
+    						<td><input type="password" name="password"></td>
+    					</tr>
+    					<tr><td></td><td><input type="radio" value="student" name="person" checked="checked">学生 &nbsp<input type="radio" value="teacher" name="person">老师</td></tr>
+    					<tr><td>请输入验证码：</td><td><input type="text" name="securityCode" style="width:50px;"><img src="/studentsystem/servlet/securityCode" onclick="change();"><a href="javascript:change();">看不清换一张</a></td></tr>
+    					<tr><td></td><td><button value="submit" style="width: 50px" >登录</button>
+    					&nbsp&nbsp&nbsp&nbsp<button style="width: 50px" onclick="register();">注册</button></td></tr>
+    				</table>
+    			</form>
+    		</div>
+    	</div>
+    </body>
+</html>

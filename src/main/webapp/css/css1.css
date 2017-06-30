@@ -1,0 +1,229 @@
+/*
+* @Author: zhang
+* @Date:   2017-04-10 20:46:50
+* @Last Modified by:   zhang
+* @Last Modified time: 2017-04-15 16:10:25
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: gray;
+}
+.container{
+	width: 1200px;
+	margin: 0px auto;
+}
+#header,nav,#feature，footer{
+	width: 1200px;
+}
+#header{
+	width: 100%;
+	height: 174px;
+	background-color: #003366;
+}
+#hright{
+	width: 750px;
+	height: 174px;
+	float: right;
+	margin-right: 20px;
+	position: relative;
+}
+#hright li{
+	list-style: none;
+	float: left;
+	padding: 0px 10px;
+}
+#hright a:hover{
+	text-decoration: underline;
+}
+#hright1{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+#hright2{
+	width: 630px;
+	height: 20px;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 80px; right: 0px;
+}
+#hright2 a{
+	color: white;
+}
+/* 导航 */
+nav{
+	width: 1200px;
+	height: 46px;
+	background-color: #27408B;
+	position: relative;
+}
+#nav_ul>li{
+	width: 100px;
+	height: 46px;
+	list-style: none;
+	font-size: 18px;
+	text-align: center;
+	float: left;
+	color: gray;
+	line-height: 46px;
+}
+.nav_inner>li{
+	list-style: none;
+	width: 100px;
+	height: 30px;
+	font-size: 15px;
+	text-align: left;
+	line-height: 30px;
+	background-color: #27408B;
+	cursor: pointer;
+}
+#nav2 li{
+	width: 140px;
+}
+#nav3 li{
+	width: 150px;
+}
+#nav4 li{
+	width: 140px;
+}
+#nav5 li{
+	width: 160px;
+}
+a{
+	text-decoration: none;
+}
+nav ul a{
+	color: gray;
+}
+#nav_ul{
+	margin:0 auto;
+}
+#nav{
+	width: 1100px;
+	height: 46;
+	position: absolute;
+	left: 50px;
+	z-index:2;
+}
+#feature{
+	width: 1200px;
+	height: 500px;
+	background-color: grey;
+	position: relative;
+}
+#pic{
+	width: 1200px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;	
+}
+#pic ul{
+	width: 6000px;
+	height: 500px;
+	position: absolute;
+	left:0px;top: 0px;
+	transition:all 0.5s;
+	z-index:1;
+}
+#feature li{
+	float: left;
+	list-style: none;
+	overflow: hidden;
+}
+#focus-pagination{
+	width: 180px;
+	height: 25px;
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	z-index: 2;
+}
+#focus-pagination span{
+	float: left;
+	width: 25px;
+	height: 25px;
+	background-color: grey;
+	border-radius: 50%;
+	margin-left: 5px;
+	cursor: pointer;
+}
+#content{
+	width: 1200px;
+	height: 530px;
+	background-color: white;
+}
+
+.inner1, .inner2{
+	float: left;
+	width: 365px;
+	height: 230px;
+	margin: 15px;
+	color: grey;
+}
+.inner1, .inner2 a{
+	color: grey;
+}
+.inner1>span{
+	background-color: grey;
+	color: white;
+	padding: 14px;
+	font-size: 18px;
+	line-height:50px;
+	cursor: pointer;
+}
+.inner2>span{
+	line-height:50px;
+	font-size: 18px;
+	color: black;
+	padding: 17px;
+}
+.inner1{
+	font-size: 14px;
+	line-height: 18px;
+}
+#dl1{
+	line-height: 22px;
+}
+.inner2 li{
+	float: left;
+	list-style: none;
+	width: 100px;
+	padding: 5px;
+}
+.inner2>img{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.inner1 a{
+	color:grey;
+}
+.inner1 a:hover,.inner2 a:hover{
+	color:red;
+}
+
+footer{
+	height: 186px;
+	background-color: #003366;
+	color: grey;
+}
+footer a{
+	color: grey;
+}
+.foo{
+	float: left;
+}
+#fleft{
+	width: 700px;
+	height: 123px;
+	margin: 45px 0px 0px 30px;
+	line-height: 30px;
+}
+#fcenter{
+	width: 120px;
+	height: 123px;
+	line-height: 123px
+}

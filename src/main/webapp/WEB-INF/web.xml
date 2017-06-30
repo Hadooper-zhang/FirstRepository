@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>Dolog</servlet-name>
+    <servlet-class>edu.cumt.servlet.Dolog</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SecurityCode</servlet-name>
+    <servlet-class>edu.cumt.servlet.SecurityCode</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Doregister</servlet-name>
+    <servlet-class>edu.cumt.servlet.Doregister</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CkName</servlet-name>
+    <servlet-class>edu.cumt.servlet.CkName</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>edu.cumt.test.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Dologout</servlet-name>
+    <servlet-class>edu.cumt.servlet.Dologout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoChangePage</servlet-name>
+    <servlet-class>edu.cumt.servlet.DoChangePage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Reset</servlet-name>
+    <servlet-class>edu.cumt.servlet.Reset</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectCourse</servlet-name>
+    <servlet-class>edu.cumt.servlet.SelectCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveCourse</servlet-name>
+    <servlet-class>edu.cumt.servlet.RemoveCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SetScore</servlet-name>
+    <servlet-class>edu.cumt.servlet.SetScore</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Dolog</servlet-name>
+    <url-pattern>/servlet/dolog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SecurityCode</servlet-name>
+    <url-pattern>/servlet/securityCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Doregister</servlet-name>
+    <url-pattern>/servlet/doregister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CkName</servlet-name>
+    <url-pattern>/servlet/ckName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/servlet/testServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Dologout</servlet-name>
+    <url-pattern>/servlet/dologout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoChangePage</servlet-name>
+    <url-pattern>/servlet/doChangePage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Reset</servlet-name>
+    <url-pattern>/servlet/reset</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectCourse</servlet-name>
+    <url-pattern>/servlet/selectCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveCourse</servlet-name>
+    <url-pattern>/servlet/removeCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetScore</servlet-name>
+    <url-pattern>/servlet/setScore</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+</web-app>
